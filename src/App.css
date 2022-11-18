@@ -1,0 +1,137 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+*{
+  font-family: sans-serif;
+}
+
+.App-nav{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.Search-box{
+  margin-top: 20px;
+  width: 400px;
+  height: 80px;
+}
+
+.search-button{
+  width: 100px;
+  height: 40px;
+  font-size: large;
+  font-family: sans-serif;
+  font-weight: 700;
+  background-color: transparent;
+  border-radius: 20px;
+  margin-left: 8px;
+}
+
+.search-button:hover{
+  color: white;
+  background-color: black;
+}
+
+.search-input{
+  height: 30px;
+  border-radius: 20px;
+}
+
+.grid-container{
+  width: 95%;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: repeat(3,30%);
+  row-gap: 20px;
+  justify-content: space-between;
+ 
+}
+
+.grid-item{  
+  position: relative;
+}
+
+.image-box{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-box-bg{
+  width: 500%;
+  height: 500%;
+  filter: blur(16px);
+}
+
+.ads-box{
+ 
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 8px dotted black;
+  padding-bottom: 20px;
+
+}
+
+.btn-link{
+  background-color: skyblue;
+  width: 100%;
+  
+}
+
+button{
+  cursor: pointer;
+}
+
+.not-found-container{
+  height: 400px;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/4;
+}
+
+.not-found-error{
+  font-size: larger;
+  
+}
